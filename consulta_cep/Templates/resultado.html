@@ -1,25 +1,25 @@
-
-
 {% include 'index.html' %}
 {% block content %}
 <section class="best-receipe-area">
     <div class="container">
-        
+
         <div class="row">
             <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <div class="receipe-content">
-                            <h2>Resultado da busca</h2>
-                            <ul>
-                                <li><strong>CEP:</strong> {{ cep }}</li>
-                                <li><strong>Rua:</strong> {{ rua }}</li>
-                                <li><strong>Bairro:</strong> {{ bairro }}</li>
-                                <li><strong>Complemento:</strong> {{ complemento }}</li>
-                            </ul>
-                        </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="single-best-receipe-area mb-30">
+                    <div class="receipe-content">
+                        <h2>Resultado da busca</h2>
+                        <ul>
+                            <li><strong>CEP:</strong> {{ key_cep }}</li>
+                            <li><strong>Rua:</strong> {{ key_rua }}</li>
+                            <li><strong>Bairro:</strong> {{ key_bairro }}</li>
+                            <li><strong>Complemento:</strong> {{ key_complemento }}</li>
+                            <li><strong>Localidade:</strong> {{ key_localidade }} / {{ key_uf }}</li>
+                            <li><strong>DDD:</strong> {{ key_ddd }}</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </section>
